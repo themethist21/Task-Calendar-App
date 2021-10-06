@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Task Calendar</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_archive">Archive</string>
+    <string name="menu_calendar">Calendar</string>
+    <string name="menu_time">Time</string>
+    <string name="menu_list">List</string>
+    <string name="title_req">Task Title <font color='#FF0000'>*</font></string>
+    <string name="item_description_req">Task Description <font color='#FF0000'>*</font></string>
+    <string name="item_price_req">Item Price <font color='#FF0000'>*</font></string>
+    <string name="save_action">Save</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_description">Task Description Task Description Task Description
+        Task Description Task Description Task Description
+        Task Description Task Description Task Description
+        Task Description Task Description Task Description
+        Task Description Task Description Task Description </string>
+    <string name="task_date">Date</string>
+    <string name="task_time">Time</string>
+    <string name="edit_item">Edit Item</string>
+    <string name="priority_color">Show Priority Color</string>
+    <string name="delete">Delete</string>
+    <string name="delete_question">Are you sure you want to delete?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="edit_fragment_title">Edit Item</string>
+    <string name="add_fragment_title">Add Item</string>
+    <string name="search_query">Search tasks by title or date</string>
+    <string name="todays_tasks">Today\'s Tasks:</string>
+
+    <string-array name="Priorities">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+    <string name="settings">Settings</string>
+
+    <string name="notifications">Notifications</string>
+    <string name="timeday">Date and Time</string>
+    <string name="other">Other</string>
+    <string name="about">About</string>
+
+    <string name="get_notifications_from">Get notifications from:</string>
+    <string name="allow_notifications">Allow notifications</string>
+    <string name="high_prio">High priority tasks</string>
+    <string name="med_prio">Medium priority tasks</string>
+    <string name="low_prio">Low priority tasks</string>
+
+    <string name="time_format">Time format</string>
+    <string name="first_day_week">First day of the week</string>
+
+</resources>

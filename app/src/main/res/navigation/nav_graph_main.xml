@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_main.xml"
+    app:startDestination="@id/viewPagerFragment">
+
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.example.untitledcalendarapp.overview.home.ViewPagerFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_viewPagerFragment_to_specificDayFragment"
+            app:destination="@id/specificDayFragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_taskCreateFragment"
+            app:destination="@id/taskCreateFragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_nav_settings"
+            app:destination="@id/nav_settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/specificDayFragment"
+        android:name="com.example.untitledcalendarapp.overview.day.SpecificDayFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_specific_day" >
+        <argument
+            android:name="date"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_specificDayFragment_to_taskCreateFragment"
+            app:destination="@id/taskCreateFragment" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_specificDayFragment_to_taskDetailFragment"
+            app:destination="@id/taskDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskCreateFragment"
+        android:name="com.example.untitledcalendarapp.overview.create.TaskCreateFragment"
+        android:label="{title}"
+        tools:layout="@layout/fragment_task_create">
+        <argument
+            android:name="date"
+            app:argType="integer" />
+        <argument
+            android:name="task_id"
+            app:argType="integer"
+            android:defaultValue="-1" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskDetailFragment"
+        android:name="com.example.untitledcalendarapp.overview.detail.TaskDetailFragment"
+        android:label="Task Info"
+        tools:layout="@layout/fragment_task_detail" >
+        <action
+            android:id="@+id/action_taskDetailFragment_to_taskCreateFragment"
+            app:destination="@id/taskCreateFragment" >
+            <argument
+                android:name="date"
+                android:defaultValue="0" />
+        </action>
+        <argument
+            android:name="task_id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.untitledcalendarapp.overview.settings.MainSettings"
+        android:label="Settings" />
+    <fragment
+        android:id="@+id/notificationSettingsFragment"
+        android:name="com.example.untitledcalendarapp.overview.settings.NotificationSettingsFragment"
+        android:label="Notifications" />
+    <fragment
+        android:id="@+id/timedaySettingsFragment"
+        android:name="com.example.untitledcalendarapp.overview.settings.TimedaySettingsFragment"
+        android:label="Time and Day" />
+</navigation>

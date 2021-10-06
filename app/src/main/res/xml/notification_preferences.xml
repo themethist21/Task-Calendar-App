@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">>
+    <SwitchPreference
+        app:defaultValue="true"
+        app:key="notification_activate"
+        app:title="@string/allow_notifications"/>
+
+    <PreferenceCategory app:title="@string/get_notifications_from">
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:title="@string/high_prio"
+            app:key="high_prio" />
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:title="@string/med_prio"
+            app:key="medium_prio" />
+        <CheckBoxPreference
+            app:defaultValue="true"
+            app:title="@string/low_prio"
+            app:key="low_prio" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

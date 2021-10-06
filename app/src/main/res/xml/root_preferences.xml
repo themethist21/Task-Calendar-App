@@ -1,0 +1,20 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Preference
+        app:fragment="com.example.untitledcalendarapp.overview.settings.NotificationSettingsFragment"
+        app:icon="@drawable/ic_notifications"
+        app:key="notification_settings"
+        app:title="@string/notifications" />
+    <Preference
+        app:fragment="com.example.untitledcalendarapp.overview.settings.TimedaySettingsFragment"
+        app:icon="@drawable/ic_access_time"
+        app:key="datetime_settings"
+        app:title="@string/timeday" />
+
+
+    <PreferenceCategory app:title="@string/other">
+        <Preference app:title="@string/about" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
